@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int minimumDays(int S, int N, int M) {
-    if (N < M)
+int minimumDays(int S, int N, int M)
+{
+    if (N<M)
         return -1;
     int totalFood = S*M;
     int buyingDays = S-(S/7);
@@ -14,7 +15,8 @@ int minimumDays(int S, int N, int M) {
     return days;
 }
 
-int main() {
+int main()
+{
     int S = 10;
     int N = 20;
     int M = 30;
